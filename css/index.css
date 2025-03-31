@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+
+main {
+    background-color: #0b0c2a;
+}
+
+
+.title {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    border-left: 5px solid #e53637;
+    padding-left: 20px;
+}
+
+.viewalltext {
+    display: flex;
+    align-items: center;
+}
+
+.viewalltext a {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.top-list {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    color: #b7b7b7;
+    cursor: pointer;
+}
+
+
+.background-item {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.trending-item {
+    border-radius: 5px;
+    height: 325px;
+}
+
+.overly {
+    background-color: #0b0c2a49;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+.age-section {
+    color: #fff;
+    background-color: #e53637;
+    padding: 2px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: 10px 0px 0px 10px;
+}
+
+.trend-1 {
+    background-image: url('../imgs/trend-1.jpg');
+}
+
+.trend-2 {
+    background-image: url('../imgs/trend-2.jpg');
+}
+
+.trend-3 {
+    background-image: url('../imgs/trend-3.jpg');
+}
+
+.trend-4 {
+    background-image: url('../imgs/trend-4.jpg');
+}
+
+.trend-5 {
+    background-image: url('../imgs/trend-5.jpg');
+}
+
+.trend-6 {
+    background-image: url('../imgs/trend-6.jpg');
+}
+
+.comment,
+.view {
+    font-size: 13px;
+    color: #fff;
+    background-color: #3d3d3d;
+    padding: 2px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-comment {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-top: 250px;
+    position: relative;
+    z-index: 1;
+}
+
+.active-movie {
+    margin-top: 10px;
+    list-style: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding-left: 0px !important;
+}
+
+.active-movie-item {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1px 10px;
+    border-radius: 50px;
+}
+
+.h5-desc-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.tops-item {
+    height: 190px;
+    border-radius: 5px;
+}
+
+.tv-1 {
+    background-image: url('../imgs/tv-1.jpg');
+}
+
+.tv-2 {
+    background-image: url('../imgs/tv-2.jpg');
+}
+
+.tv-3 {
+    background-image: url('../imgs/tv-3.jpg');
+}
+
+.tv-4 {
+    background-image: url('../imgs/tv-4.jpg');
+}
+
+.tv-5 {
+    background-image: url('../imgs/tv-5.jpg');
+}
+
+
+
+.age-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    z-index: 1;
+}
+
+.age-view-section-view {
+    margin: 0px 10px;
+}
+
+.tops-section-description {
+    z-index: 1;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.popular-1 {
+    background-image: url('../imgs/popular-1.jpg');
+}
+
+.popular-2 {
+    background-image: url('../imgs/popular-2.jpg');
+}
+
+.popular-3 {
+    background-image: url('../imgs/popular-3.jpg');
+}
+
+.popular-4 {
+    background-image: url('../imgs/popular-4.jpg');
+}
+
+.popular-5 {
+    background-image: url('../imgs/popular-5.jpg');
+}
+
+.popular-6 {
+    background-image: url('../imgs/popular-6.jpg');
+}
+
+.new-comment-title {
+    margin-top: 100px;
+}
+
+@media screen and (max-width:769px) {
+    .new-comment-title {
+        margin-top: 0px;
+    }
+}
+
+.comment-item {
+    display: flex;
+    gap: 10px;
+}
+
+.comment-item-img {
+    height: 190px;
+}
+
+.view-new-comment {
+    background-color: transparent;
+    font-size: 13px;
+    color: #b7b7b7;
+    margin-top: 50px;
+}
+
+.overly-new-comment {
+    background-color: #1f23a54a;
+}
+
+.recent-1 {
+    background-image: url('../imgs/recent-1.jpg');
+}
+
+.recent-2 {
+    background-image: url('../imgs/recent-2.jpg');
+}
+
+.recent-3 {
+    background-image: url('../imgs/recent-3.jpg');
+}
+
+.recent-4 {
+    background-image: url('../imgs/recent-4.jpg');
+}
+
+.recent-5 {
+    background-image: url('../imgs/recent-5.jpg');
+}
+
+.recent-6 {
+    background-image: url('../imgs/recent-6.jpg');
+}
+
+.live-1 {
+    background-image: url('../imgs/live-1.jpg');
+}
+
+.live-2 {
+    background-image: url('../imgs/live-2.jpg');
+}
+
+.live-3 {
+    background-image: url('../imgs/live-3.jpg');
+}
+
+.live-4 {
+    background-image: url('../imgs/live-4.jpg');
+}
+
+.live-5 {
+    background-image: url('../imgs/live-5.jpg');
+}
+
+.live-6 {
+    background-image: url('../imgs/live-6.jpg');
+}
+
+
+
+
+footer {
+    background-color: #070720;
+}
+
+.container-footer {
+    padding: 50px 20px;
+    position: relative;
+}
+
+.footer-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.footer-navbar-item {
+    color: #b7b7b7;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-desc{
+    font-size: 15px;
+    color: #3d3d3d;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+}
+
+.back-first{
+    background-color: #e53637;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 1px 4px #e5363678 ;
+}
