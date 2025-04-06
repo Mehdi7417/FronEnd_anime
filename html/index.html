@@ -20,9 +20,111 @@
 
 <body>
 
-    <header></header>
+    <header>
+
+        <section class="section section-header">
+
+            <div class="container-fluid">
+
+                <div class="container-header">
+                    <div class="row row-header">
+
+                        <div class="col">
+                            <img src="../imgs/logo.png" alt="logo" class="img-fluid">
+                        </div>
+
+                        <div class="col">
+                            <nav class="main-menu desktop-menu">
+                                <ul>
+                                    <li class="main-menu-item selected">
+                                        <a href="#" class="main-menu-link">Homepage</a>
+                                    </li>
+                                    <li class="main-menu-item">
+                                        <a href="#" class="main-menu-link">Categories</a>
+                                    </li>
+                                    <li class="main-menu-item">
+                                        <a href="#" class="main-menu-link">OurBlog</a>
+                                    </li>
+                                    <li class="main-menu-item">
+                                        <a href="#" class="main-menu-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="container-user-search">
+                                <i class="fa">&#xf002;</i>
+                                <i class="fa">&#xf007;</i>
+                            </div>
+                        </div>
+
+
+                        <div class="second-menu col-12">
+                            <button class="second-menu-btn">
+                                <span>MENU</span>
+                                <i style="font-size:24px" class="fa">&#xf0c9;</i>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+    </header>
 
     <main>
+
+
+        <section class="section section-carousel">
+            <div class="container container-hero-background mb-4">
+                <div class="col-12 background-item hero-background">
+                    <div class="container-next-prev">
+
+                        <div class="symbol prev">
+                            <button type="button" class="prev-btn direction-button" id="prev-btn"
+                                onclick="PrevButton()">
+                                <i class="fa">&#xf104;</i>
+                            </button>
+                        </div>
+
+                        <div class="symbol next">
+                            <button type="button" class="next-btn direction-button" id="next-btn"
+                                onclick="NextButton()">
+                                <i class="fa">&#xf105;</i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-12 hero-data hero-data-animation" id="hero-data">
+                        <h2 class="hero-text text-h2">
+                            Fate / Stay Night: Unlimited Blade Works
+                        </h2>
+                        <p class="hero-text text-p">
+                            After 30 days of travel across the world...
+                        </p>
+                        <button type="button" class="watchnow-btn">
+                            watch now
+                        </button>
+                    </div>
+
+                    <div class="conatiner-slides">
+                        <div class="slide slide1 default-slide" id="slide1"></div>
+                        <div class="slide slide2" id="slide2"></div>
+                        <div class="slide slide3" id="slide3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section class="section section-trending-now">
 
@@ -54,7 +156,7 @@
 
                             <div class="row">
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
 
                                     <div class="background-item trending-item trend-1 ">
                                         <div class="overly overly-trending-section"></div>
@@ -90,7 +192,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
 
                                     <div class="background-item trending-item trend-2 ">
                                         <div class="overly overly-trending-section"></div>
@@ -126,7 +228,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
 
                                     <div class="background-item trending-item trend-3 ">
                                         <div class="overly overly-trending-section"></div>
@@ -162,7 +264,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
 
                                     <div class="background-item trending-item trend-4 ">
                                         <div class="overly overly-trending-section"></div>
@@ -198,7 +300,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
 
                                     <div class="background-item trending-item trend-5 ">
                                         <div class="overly overly-trending-section"></div>
@@ -234,7 +336,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
 
                                     <div class="background-item trending-item trend-6 ">
                                         <div class="overly overly-trending-section"></div>
@@ -450,7 +552,7 @@
                         <div class="container mt-3">
                             <div class="row">
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item popular-1 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -484,7 +586,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item popular-2 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -518,7 +620,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item popular-3 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -552,7 +654,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item popular-4 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -586,7 +688,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item popular-5 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -621,7 +723,7 @@
                                 </div>
 
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item popular-6 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -813,7 +915,7 @@
                         <div class="container mt-3">
                             <div class="row">
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item recent-1 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -847,7 +949,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item recent-2 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -881,7 +983,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item recent-3 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -915,7 +1017,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item recent-4 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -949,7 +1051,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item recent-5 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -983,7 +1085,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item recent-6 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -1059,7 +1161,7 @@
                         <div class="container mt-3">
                             <div class="row">
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item live-1 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -1093,7 +1195,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item live-2 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -1127,7 +1229,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item live-3 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -1161,7 +1263,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item live-4 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -1195,7 +1297,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-4">
                                     <div class="background-item trending-item live-5 ">
                                         <div class="overly overly-trending-section"></div>
 
@@ -1229,7 +1331,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 col-sm-6 col-6 mb-5">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-5">
                                     <div class="background-item trending-item live-6 ">
                                         <div class="overly overly-trending-section"></div>
 

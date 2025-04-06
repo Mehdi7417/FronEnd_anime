@@ -11,6 +11,83 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
+.section-header {
+    background-color: #070720;
+}
+
+.container-header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row-header {
+    display: flex;
+    align-items: center;
+    /* padding: 20px 0px; */
+}
+
+
+.main-menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.main-menu-item {
+    padding: 20px;
+}
+
+
+
+.main-menu-link {
+    color: #b7b7b7;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.main-menu-link:hover {
+    color: #fff;
+}
+
+.selected {
+    background-color: #e53637;
+}
+
+.selected a {
+    color: #fff;
+}
+
+.container-user-search {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+
+.second-menu {
+    background-color: #4C4C4C;
+    padding: 15px;
+}
+
+
+.second-menu-btn {
+    border: 1px solid #212121;
+    outline: none;
+    background-color: #212121;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
 main {
     background-color: #0b0c2a;
@@ -331,14 +408,14 @@ footer {
     font-weight: 700;
 }
 
-.footer-desc{
+.footer-desc {
     font-size: 15px;
     color: #3d3d3d;
     font-family: "Mulish", sans-serif;
     font-weight: 400;
 }
 
-.back-first{
+.back-first {
     background-color: #e53637;
     color: #fff;
     width: 50px;
@@ -353,7 +430,171 @@ footer {
     left: 50%;
     margin-left: -20px;
     cursor: pointer;
-    outline: none;
     border: none;
-    box-shadow: 0px 2px 1px 4px #e5363678 ;
+    outline: none;
+}
+
+/* the carousel sections */
+
+.container-hero-background {
+    padding: 40px 20px;
+}
+
+.hero-background {
+    background-image: url('../imgs/hero-1.jpg');
+    border-radius: 5px;
+    max-height: 600px;
+    height: 600px;
+    position: relative;
+}
+
+
+.container-next-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+
+.symbol {
+    background-color: #0b0c2a;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: -45deg;
+    position: absolute;
+    top: 250px;
+}
+
+
+@media screen and (max-width:780px) {
+    .hero-background {
+        height: 400px;
+    }
+
+    .symbol {
+        top: 180px;
+    }
+
+}
+
+.prev {
+    left: -1.5vw;
+    position: relative;
+    z-index: 3;
+}
+
+.next {
+    right: -1.5vw;
+}
+
+.symbol i {
+    rotate: 45deg;
+    font-size: clamp(22px, 10vw, 36px);
+}
+
+.direction-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+@keyframes fadeInup {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.hero-data {
+    padding: 0px 60px;
+    /* margin-top: 15vw; */
+    padding-bottom: 20px;
+}
+
+.hero-data-animation {
+    animation: fadeInup 2s ease-in-out forwards;
+}
+
+
+.hero-text {
+    color: #fff;
+}
+
+.text-h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.text-p {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+
+}
+
+.watchnow-btn {
+    background-color: #e53637;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.hero-data::after {
+    content: '</>';
+    background-color: #e53637;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    border: 3px solid #e53637;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.conatiner-slides {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.conatiner-slides div {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #b7b7b7;
+}
+
+.default-slide {
+    background-color: red !important;
 }
